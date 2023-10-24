@@ -236,6 +236,7 @@ class Graph_TSP_Solver():
             for i in range(1,len(probabilities)):
                 cum_probs.append(cum_probs[i-1] + probabilities[i])
 
+            # Selection process
             new_states = []
             while len(new_states) < k: # keep k states
                 choose = 0
@@ -485,9 +486,9 @@ class Graph_TSP_Solver():
         if method == "sa":
             tour, solutions_count, performance = self.tsp_sa(100,0.9,1000)
         elif method == "evo":
-            tour, solutions_count, performance = self.tsp_evo(8, 2, 8, 1000)
+            tour, solutions_count, performance = self.tsp_evo(16, 2, 8, 1000)
         elif method == "pop":
-            tour, solutions_count, performance = self.tsp_pop(4,1000)
+            tour, solutions_count, performance = self.tsp_pop(2,1000)
         
 
         # Generate directed graph with solution
