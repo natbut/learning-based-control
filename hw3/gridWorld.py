@@ -1,15 +1,7 @@
-'''NOTES
+'''
+This is initial code developed during testing.
 
-SARSA:
-For training setup: https://www.geeksforgeeks.org/sarsa-reinforcement-learning/
-Epsilon-Greedy: https://www.geeksforgeeks.org/epsilon-greedy-algorithm-in-reinforcement-learning/
-For conceptual stuff: https://builtin.com/machine-learning/sarsa
-More conceptual: https://www.cse.unsw.edu.au/~cs9417ml/RL1/algorithms.html
-
-
-Q-Learning:
-Same as training setup for sarsa
-
+Run hw3_full.ipynb for rob537 hw3 assignment.
 '''
 
 from random import randint
